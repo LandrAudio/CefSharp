@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>landr.cef.redist.$Platform$</id>
+    <version>$version$</version>
+    <authors>The Chromium Embedded Framework Authors</authors>
+    <owners>The CefSharp Authors</owners>
+    <projectUrl>https://github.com/cefsharp/cef-binary</projectUrl>
+    <iconUrl>https://raw.github.com/cefsharp/cef-binary/master/NuGet/cef128x128.gif</iconUrl>
+    <licenseUrl>https://raw.github.com/cefsharp/cef-binary/master/LICENSE.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>CEF - the Chromium Embedded Framework.
+    NOTE: This package is maintained on behalf of the CEF authors by the CefSharp project at http://github.com/cefsharp/cef-binary</description>
+    <tags>chrome chromium native embedded browser CEF nativepackage</tags>
+    <copyright>Copyright © 2008-2015</copyright>
+  </metadata>
+  <files>
+    <file src="..\cef\chromium\src\out\$Configuration$\*.dll" target="CEF\$Platform$" />
+    
+    <!-- Since CEF 3.2357 the files natives_blob.bin and snapshot_blob.bin need to be distributed.
+         https://groups.google.com/a/chromium.org/forum/#!topic/chromium-packagers/75J9Y1vIc_E
+         http://www.magpcss.org/ceforum/viewtopic.php?f=6&t=12580
+     -->
+    <file src="..\cef\chromium\src\out\$Configuration$\*.bin" target="CEF\$Platform$" />
+    <file src="..\cef\chromium\src\out\$Configuration$\*.pak" target="CEF\"/>
+    <file src="..\cef\chromium\src\out\$Configuration$\icudtl.dat" target="CEF\"/>
+    <file src="..\cef\chromium\src\out\$Configuration$\locales\*.pak" target="CEF\locales"/>
+
+    <file src="cef.redist.targets" target="build\landr.cef.redist.$Platform$.targets" />
+  </files>
+</package>

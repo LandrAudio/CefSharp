@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>CefSharp.Common</id>
+    <id>landr.CefSharp.Common</id>
     <version>$version$</version>
     <authors>The CefSharp Authors</authors>
     <owners>The CefSharp Authors</owners>
@@ -12,8 +12,8 @@
     <tags>chrome browser</tags>
     <copyright>Copyright © 2010-2015 The CefSharp Authors</copyright>
     <dependencies>
-      <dependency id="cef.redist.x86" version="[$RedistVersion$]" />
-      <dependency id="cef.redist.x64" version="[$RedistVersion$]" />
+      <dependency id="landr.cef.redist.x86" version="[$RedistVersion$]" />
+      <!--dependency id="landr.cef.redist.x64" version="[$RedistVersion$]" /-->
     </dependencies>
   </metadata>
   <files>
