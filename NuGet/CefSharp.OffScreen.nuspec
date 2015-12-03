@@ -26,7 +26,7 @@
     <!-- Long shot, to see if it's here NuDoq.org looks for it, trial and error at it's best -->
     <file src="..\CefSharp.OffScreen\bin\x64\Release\CefSharp.OffScreen.xml" target="lib" />
 
-    <file src="CefSharp.OffScreen.props" target="build\landr.CefSharp.OffScreen.props" />" />
+    <file src="CefSharp.OffScreen.props" target="build\landr.CefSharp.OffScreen.props" />
 
     <file src="Readme.txt" target="" />
   </files>
