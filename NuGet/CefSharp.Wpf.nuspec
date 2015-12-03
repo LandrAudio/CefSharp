@@ -26,7 +26,7 @@
     <!-- Long shot, to see if it's here NuDoq.org looks for it, trial and error at it's best -->
     <file src="..\CefSharp.Wpf\bin\x64\Release\CefSharp.Wpf.xml" target="lib" />
 
-    <file src="CefSharp.Wpf.props" target="build" />
+    <file src="CefSharp.Wpf.props" target="build\landr.CefSharp.Wpf.props" />
 
     <file src="Readme.txt" target="" />
   </files>
