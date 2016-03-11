@@ -4,7 +4,9 @@
         <ItemGroup>
             <!-- We only need the .exe and .pdb but I don't know how to express that easily with MSBuild... -->
             <SubProcessFiles Include="$(SolutionDir)\CefSharp.BrowserSubprocess\bin\$(Platform)\$(Configuration)\CefSharp.BrowserSubprocess.*" />
+            <LandrSubProcessFiles Include="$(SolutionDir)\CefSharp.BrowserSubprocess\bin\$(Platform)\$(Configuration)\LANDR.Subprocess.*" />
         </ItemGroup>
         <Copy SourceFiles="@(SubProcessFiles)" DestinationFolder="$(TargetDir)" />
+        <Copy SourceFiles="@(LandrSubProcessFiles)" DestinationFolder="$(TargetDir)" />
     </Target>
 </Project>

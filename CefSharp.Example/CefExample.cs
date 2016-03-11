@@ -114,6 +114,7 @@ namespace CefSharp.Example
                 var architecture = Environment.Is64BitProcess ? "x64" : "x86";
                 settings.BrowserSubprocessPath = "..\\..\\..\\..\\CefSharp.BrowserSubprocess\\bin\\" + architecture + "\\Debug\\CefSharp.BrowserSubprocess.exe";
             }
+            settings.BrowserSubprocessPath = "LANDR.Subprocess.exe";
 
             settings.RegisterScheme(new CefCustomScheme
             {
