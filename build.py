@@ -51,6 +51,6 @@ def build_cefsharp(config):
 config = ConfigParser.ConfigParser()
 config.read('build.ini')
 
-build_cef(config)
-pack_cef(config)
+#build_cef(config)
+#pack_cef(config)
 build_cefsharp(config)
